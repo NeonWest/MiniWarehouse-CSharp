@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouseC#.csproj",
-      "projectName": "MiniWarehouseC#",
-      "projectPath": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouseC#.csproj",
+      "projectUniqueName": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouse-CSharp.csproj",
+      "projectName": "MiniWarehouse-CSharp",
+      "projectPath": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouse-CSharp.csproj",
       "packagesPath": "/Users/omaratakishi/.nuget/packages/",
       "outputPath": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/obj/",
       "projectStyle": "PackageReference",
