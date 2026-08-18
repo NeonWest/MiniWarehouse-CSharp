@@ -1,6 +1,37 @@
-﻿using MiniWarehouse_CSharp.Services;
+﻿using MiniWarehouse_CSharp.Models;
+using MiniWarehouse_CSharp.Services;
 
-var inventoryService = new InventoryService();
+var productService = new ProductService();
+var warehouseService = new WarehouseService();
+var inventoryService = new InventoryService(productService, warehouseService);
+
+var keyboard = new Product
+{
+    Id = 1,
+    Sku = "KB-001",
+    Name = "Mechanical Keyboard",
+    Price = 79.99m
+};
+
+var mouse = new Product
+{
+    Id = 2,
+    Sku = "MS-001",
+    Name = "Wireless Mouse",
+    Price = 29.99m
+};
+
+var mainWarehouse = new Warehouse
+{
+    Id = 1,
+    Name = "Main Warehouse",
+    Location = "Budapest"
+};
+
+productService.AddProduct(keyboard);
+productService.AddProduct(mouse);
+
+warehouseService.AddWarehouse(mainWarehouse);
 
 while (true)
 {
