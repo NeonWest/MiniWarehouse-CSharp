@@ -1,39 +1,33 @@
 namespace MiniWarehouse_CSharp.Services;
 
 public class InventoryService{
-    Dictionary<(int ProductId, int WarehouseId), int> stock = new();
-    //The stock inventory
+    private Dictionary<(int ProductId, int WarehouseId), int> stock = new();
 
     private ProductService productService;
     private WarehouseService warehouseService;
 
-
-    public InventoryService(ProductService productService, WarehouseService warehouseService) {
+    public InventoryService(ProductService productService, WarehouseService warehouseService){
         this.productService = productService;
         this.warehouseService = warehouseService;
     }
 
-    public void AddStock(int productId, int warehouseId, int quantity) {
-        if (productService.GetProduct(productId) == null)
-        {
+    public void AddStock(int productId, int warehouseId, int quantity){
+        if(productService.GetProduct(productId) == null){
             Console.WriteLine("Product not found.");
             return;
-        } //product exists
+        }
 
-        if (warehouseService.GetWarehouse(warehouseId) == null)
-        {
+        if(warehouseService.GetWarehouse(warehouseId) == null){
             Console.WriteLine("Warehouse not found.");
             return;
-        } //warehouse exists
+        }
 
         var key = (productId, warehouseId);
 
-        if (stock.ContainsKey(key))
-        {
+        if(stock.ContainsKey(key)){
             stock[key] += quantity;
         }
-        else
-        {
+        else{
             stock[key] = quantity;
         }
 
@@ -62,18 +56,17 @@ public class InventoryService{
         }
     }
 
-    public int GetStock(int productId, int warehouseId) {
+    public int GetStock(int productId, int warehouseId){
         var key = (productId, warehouseId);
 
-        if (stock.ContainsKey(key))
-        {
+        if(stock.ContainsKey(key)){
             return stock[key];
         }
 
         return 0;
     }
 
-    public Dictionary<(int ProductId, int WarehouseId), int> GetAllStock() {
+    public Dictionary<(int ProductId, int WarehouseId), int> GetAllStock(){
         return stock;
     }
 }
