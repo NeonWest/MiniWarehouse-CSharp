@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouse-CSharp.csproj": {}
+    "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouse-CSharp/MiniWarehouse-CSharp.csproj": {}
   },
   "projects": {
-    "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouse-CSharp.csproj": {
+    "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouse-CSharp/MiniWarehouse-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouse-CSharp.csproj",
+        "projectUniqueName": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouse-CSharp/MiniWarehouse-CSharp.csproj",
         "projectName": "MiniWarehouse-CSharp",
-        "projectPath": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/MiniWarehouse-CSharp.csproj",
+        "projectPath": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouse-CSharp/MiniWarehouse-CSharp.csproj",
         "packagesPath": "/Users/omaratakishi/.nuget/packages/",
-        "outputPath": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouseC#/obj/",
+        "outputPath": "/Users/omaratakishi/Documents/PROJECTS/MiniWarehouse-CSharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/omaratakishi/.nuget/NuGet/NuGet.Config"
